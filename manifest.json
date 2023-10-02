@@ -1,0 +1,16 @@
+{
+  "name": "Auto Refresh Extension",
+  "version": "1.0.0",
+  "description": "Refreshes current page after set interval",
+  "manifest_version": 3,
+  "author": "Emmanuel Andem",
+  "action": {
+    "default_title": "Auto Refresh"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["script.js"]
+    }
+  ]
+}
